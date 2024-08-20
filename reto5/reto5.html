@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listas de Supermercado</h1>
+
+        <div class="form-group">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="lacteos">Lácteos</option>
+                <option value="ferreteria">Ferretería</option>
+                <option value="cereales">Cereales</option>
+                <option value="dulces">Dulces</option>
+                <option value="frutas">Frutas</option>
+                <option value="medicinas">Medicinas</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="item">Nuevo Ítem:</label>
+            <input type="text" id="item" placeholder="Escribe un ítem...">
+        </div>
+
+        <button onclick="agregarItemDesdeFormulario()">Agregar Ítem</button>
+
+        <div id="listas">
+            <!-- Aquí se mostrarán las listas -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
