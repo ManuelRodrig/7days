@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza con 3 Intentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>¡Adivina el número!</h1>
+    <p>Estoy pensando en un número entre 1 y 10. Tienes 3 intentos.</p>
+    <input type="number" id="guess" placeholder="Introduce un número" min="1" max="10">
+    <button id="guessButton" onclick="checkGuess()">Adivinar</button>
+    <button id="restartButton" onclick="restartGame()" style="display:none;">Reiniciar</button>
+    <p id="result"></p>
+    <p id="attempts"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
